@@ -70,7 +70,7 @@ bot.on('message', (message) => {
 			cmd = cmd.slice(prefix.length).trim();
 			var commandFile = bot.commands.enabledCommands.find(({ settings }) => (settings.aliases || []).concat(settings.name).includes(cmd));
 			if (commandFile != null) {
-				commandFile.run(message, args);
+				commandFile.run(bot, message, args);
 			}
 		}
 	}

@@ -1,7 +1,7 @@
-const RESTRICTED = ['469473019425849355', '245877990938902529'];
+const RESTRICTED = ['469473019425849355'];
 const { RichEmbed } = require('discord.js');
 module.exports = {
-	run: (message, args) => {
+	run: (bot, message, args) => {
 		if (RESTRICTED.includes(message.author.id)) {
 			if (!args[1]) return message.reply('Not enough arguments provided!');
 			let embed = new RichEmbed()
