@@ -1,4 +1,4 @@
-const RESTRICTED = ['469473019425849355'];
+const RESTRICTED = ['469473019425849355', '258337390643511306'];
 const { RichEmbed } = require('discord.js');
 module.exports = {
 	run: (bot, message, args) => {
