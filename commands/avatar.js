@@ -1,4 +1,4 @@
-const RESTRICTED = ['469473019425849355'];
+const RESTRICTED = ['469473019425849355', '258337390643511306'];
 module.exports = {
 	run: (bot, message, args) => {
 		if (RESTRICTED.includes(message.author.id)) {
